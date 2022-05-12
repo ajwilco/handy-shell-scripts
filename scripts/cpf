@@ -1,0 +1,13 @@
+#!/bin/bash
+# Do cp, then move the session to where everything was copied.
+# Alternative to cp file.txt /to/place/ && cd /to/place
+
+cp "$@"
+
+last="${@: -1}"
+
+if [ -d "$last" ] ; then
+        cd $last
+fi
+
+$SHELL
