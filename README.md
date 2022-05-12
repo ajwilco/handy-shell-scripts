@@ -7,3 +7,20 @@ Deploy any one script with:
 ```
 chmod +x [script] && sudo cp [script] /usr/local/bin/
 ```
+
+## cpf
+"Copy, Follow." Maybe cpcd would be a better name?
+Alternative to `cp file.txt /to/place/ && cd /to/place`
+
+## mvf
+"Move, Follow." Maybe mvcd would be a better name?
+Alternative to mv file.txt /to/place/ && cd /to/place
+
+## myip
+"What is my current external IP?"
+Depends on `curl` being installed.
+
+## nsl
+"Name Server Lookup." Maybe I didn't know about `nslookup` when I made this.
+Depends on `whois` being installed.
+`whois` is very.. verbose.  I made this to just get the info I tend to need.
