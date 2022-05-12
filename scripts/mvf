@@ -1,0 +1,13 @@
+#!/bin/bash
+# Do mv, then move the session to where everything was moved.
+# Alternative to mv file.txt /to/place/ && cd /to/place
+
+mv "$@"
+
+last="${@: -1}"
+
+if [ -d "$last" ];then
+        cd $last
+fi
+
+$SHELL
