@@ -1,0 +1,7 @@
+#!/bin/bash
+# Depends on whois.
+# whois is very.. verbose.  I made this to just get the info I tend to need.
+
+echo ""
+whois $1 | egrep 'Registrant\ Name|Name\ Server|Registrar:|Date:'
+echo ""
