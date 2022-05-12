@@ -8,6 +8,10 @@ Deploy any one script with:
 chmod +x [script] && sudo cp [script] /usr/local/bin/
 ```
 
+## apts-get
+"apt: update, upgrade, cleanup."
+- Only useful on systems that use the `apt` package manager.
+
 ## cpf
 "Copy, Follow." Maybe cpcd would be a better name?
 
