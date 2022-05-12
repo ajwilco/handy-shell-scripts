@@ -1,0 +1,6 @@
+#!/bin/bash
+# You'll need to install curl.
+# Thanks, ipinfo.io!
+
+curl http://ipinfo.io/ip
+echo ''
