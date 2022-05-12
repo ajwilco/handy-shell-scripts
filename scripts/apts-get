@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ "$EUID" -ne 0 ] ; then 
+  echo "Please run with sudo."
+  exit
+fi
+
+apt-get update
+apt-get upgrade -y
+apt-get autoremove
+apt-get autoclean
