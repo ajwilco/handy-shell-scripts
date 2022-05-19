@@ -7,6 +7,12 @@ Deploy any one script with:
 ```
 chmod +x [script] && sudo cp [script] /usr/local/bin/
 ```
+**Note about cpf & mvf:**  They work by opening another shell in the destination folders. You'll have to type `exit` an extra time for every time you run cpf or mvf.  You can remove `$SHELL` from them, and add an alias to your `~/.bashrc` to get around this:
+```
+alias mvf='./usr/local/bin/mvf'
+alias cpf='./usr/local/bin/cpf'
+```
+Thanks to Comet and Dan_C of the Pensacola Python / Linux Discord with working this out.
 
 ## apts-get
 "apt: update, upgrade, cleanup."
