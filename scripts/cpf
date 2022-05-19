@@ -8,6 +8,5 @@ last="${@: -1}"
 
 if [ -d "$last" ] ; then
         cd $last
+        $SHELL
 fi
-
-$SHELL
